@@ -53,6 +53,8 @@
     }
 })();
 */
+document.title = "Marcus Will You Be My Valentine?";
+
 const messages = [
     "Are you sure?",
     "Really sure??",
