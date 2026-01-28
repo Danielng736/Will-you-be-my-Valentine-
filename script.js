@@ -72,6 +72,10 @@ const noGifs = [
     "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzNoZjQwazZhZzZ5MzJ1bWFpNmRwcTJrMDRwMmZjMHJ2NHd1N2FpMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QMZTxArIp9HkaiJGMo/giphy.gif"
 ];
 
+const bounceGifs = [
+    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGd1a3EwOTUxODZvaTdjcXo2dHd6bmU0eXBxMHBzd3dqbHJteXFwciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/I6PCqzAByxfEF97WSf/giphy.gif",
+];
+
 let gifIndex = 0;
 let messageIndex = 0;
 
