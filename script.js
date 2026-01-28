@@ -72,7 +72,7 @@ const noGifs = [
     "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzNoZjQwazZhZzZ5MzJ1bWFpNmRwcTJrMDRwMmZjMHJ2NHd1N2FpMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QMZTxArIp9HkaiJGMo/giphy.gif"
 ];
 
-const bounceGifs = [
+const bounceGifsYes = [
     "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGd1a3EwOTUxODZvaTdjcXo2dHd6bmU0eXBxMHBzd3dqbHJteXFwciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/I6PCqzAByxfEF97WSf/giphy.gif",
 ];
 
@@ -96,11 +96,19 @@ function handleNoClick() {
     gif.src = noGifs[gifIndex];
     gifIndex = (gifIndex + 1) % noGifs.length;
 }
+let yesGifIndex = 0; // tracks which Yes GIF to show
+
 function handleYesClick() {
-    const randomIndex = Math.floor(Math.random() * bounceGifs.length);
-    gif.src = bounceGifs[randomIndex];
+    const gif = document.getElementById("valentineGif");
+
+    // Cycle through Yes GIFs
+    gif.src = bounceGifsYes[yesGifIndex];
+    yesGifIndex = (yesGifIndex + 1) % bounceGifsYes.length;
 
     // Start bouncing
     gif.classList.add("bounce");
-    window.location.href = "yes_page.html";
+
+    // Optional: do whatever else you want on Yes click
+    // e.g., redirect after a delay
+    // setTimeout(() => { window.location.href = "yes_page.html"; }, 1500);
 }
