@@ -56,7 +56,7 @@
 document.title = "Marcus Will You Be My Valentine?";
 
 const messages = [
-    "Are you sure?",
+    "South Carolina is Gone",
     "Really sure??",
     "Are you positive?",
     "Pookie please...",
