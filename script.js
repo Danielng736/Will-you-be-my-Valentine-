@@ -57,22 +57,19 @@ document.title = "Marcus Will You Be My Valentine?";
 
 const messages = [
     "South Carolina is Gone",
-    "Really sure??",
-    "Are you positive?",
-    "Pookie please...",
-    "Just think about it!",
-    "If you say no, I will be really sad...",
-    "I will be very sad...",
-    "I will be very very very sad...",
-    "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
+    "Marcus is evil now",
+    "Shussshhh",
+    "You have committed fraud in a greek resturant laundering 14k",
+    "Help Marcus he is drowning say YES"
+    
 ];
 
 const noGifs = [
     "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmY5NGE4amdyZnR0aGdqNmxsdWFramFqcHZ2MHg3dDFjM2tuenh0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WMTessTbMEQFtrlIAE/giphy.gif",
     "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHkzbjV1d25rNHM5bnR5dHQxNmx4bmUybXQ4YXl3OTFvNDE5NWYxdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4zPB0WxHQPkyoxXZ52/giphy.gif",
     "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3AzMXV3ZHdkZDIydGRmMzJ0cGQ1aXhqNzE3Y2Vtc3A3a24wdXFmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3y6VfhC2hEVMjk6qYx/giphy.gif",
-    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2RqNWJ1dHJpcm44eDdtNTNtb3NvaGw0ejB4a25xam9pMmcyMW02NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oL56Q1wmbnCT7Zby9F/giphy.gif"
+    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2RqNWJ1dHJpcm44eDdtNTNtb3NvaGw0ejB4a25xam9pMmcyMW02NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oL56Q1wmbnCT7Zby9F/giphy.gif",
+    "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzNoZjQwazZhZzZ5MzJ1bWFpNmRwcTJrMDRwMmZjMHJ2NHd1N2FpMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QMZTxArIp9HkaiJGMo/giphy.gif"
 ];
 
 let gifIndex = 0;
