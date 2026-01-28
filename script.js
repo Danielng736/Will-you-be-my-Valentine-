@@ -68,17 +68,33 @@ const messages = [
     "Just kidding, say yes please! ❤️"
 ];
 
+const noGifs = [
+    "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmY5NGE4amdyZnR0aGdqNmxsdWFramFqcHZ2MHg3dDFjM2tuenh0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WMTessTbMEQFtrlIAE/giphy.gif",
+    "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHkzbjV1d25rNHM5bnR5dHQxNmx4bmUybXQ4YXl3OTFvNDE5NWYxdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4zPB0WxHQPkyoxXZ52/giphy.gif",
+    "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3AzMXV3ZHdkZDIydGRmMzJ0cGQ1aXhqNzE3Y2Vtc3A3a24wdXFmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3y6VfhC2hEVMjk6qYx/giphy.gif",
+    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2RqNWJ1dHJpcm44eDdtNTNtb3NvaGw0ejB4a25xam9pMmcyMW02NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oL56Q1wmbnCT7Zby9F/giphy.gif"
+];
+
+let gifIndex = 0;
 let messageIndex = 0;
 
 function handleNoClick() {
     const noButton = document.querySelector('.no-button');
     const yesButton = document.querySelector('.yes-button');
+    const gif = document.getElementById("valentineGif");
+
+    // Change button text
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
+
+    // Grow YES button
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
-}
 
+    // Change GIF
+    gif.src = noGifs[gifIndex];
+    gifIndex = (gifIndex + 1) % noGifs.length;
+}
 function handleYesClick() {
     window.location.href = "yes_page.html";
 }
