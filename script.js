@@ -93,5 +93,6 @@ function handleNoClick() {
     gifIndex = (gifIndex + 1) % noGifs.length;
 }
 function handleYesClick() {
+    gif.classList.add("bounce");
     window.location.href = "yes_page.html";
 }
