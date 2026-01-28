@@ -97,6 +97,10 @@ function handleNoClick() {
     gifIndex = (gifIndex + 1) % noGifs.length;
 }
 function handleYesClick() {
+    const randomIndex = Math.floor(Math.random() * bounceGifs.length);
+    gif.src = bounceGifs[randomIndex];
+
+    // Start bouncing
     gif.classList.add("bounce");
     window.location.href = "yes_page.html";
 }
